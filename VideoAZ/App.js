@@ -30,55 +30,33 @@ export default class App extends Component {
   render() {
     return (
       <>
-        <StatusBar barStyle="dark-content" />
-        <SafeAreaView>
+        <View style={styles.container}>
           <Image
-            source={require('./assets/logo.png')}
+            source={require('./assets/az-nuevo_circular.png')}
             style={{width: 300, height: 80}}
           />
-          <Text>HOLA</Text>
+          <Text style={styles.HeadText}>HOLA WE</Text>
           <Text>{instructions}</Text>
-        </SafeAreaView>
+        </View>
       </>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
+  container: {
+    padding: 20,
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'white',
   },
-  engine: {
-    position: 'absolute',
-    right: 0,
+  HeadText: {
+    color: 'blue',
+    paddingTop: 10,
   },
+
   body: {
-    backgroundColor: Colors.white,
-  },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
+    backgroundColor: 'white',
   },
 });
